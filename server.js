@@ -2,11 +2,13 @@ const express = require('express')
 const morgan = require('morgan')
 const contactRoute = require('./api/routes/contacts')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
 
 const app = express()
 
 app.use(morgan('dev'))
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
@@ -18,5 +20,5 @@ app.get('/', function(req, res){
 });
 
 app.listen(3000, function(){
-	console.log('server is started in localhost 3000')
+	console.log('server is started in localhost:3000')
 });
