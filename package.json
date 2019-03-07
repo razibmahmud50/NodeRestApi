@@ -4,13 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "Node server.js"
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.17"
   },
   "devDependencies": {
     "morgan": "^1.9.1",
