@@ -1,10 +1,10 @@
 const express = require('express')
 const morgan = require('morgan')
-const contactRoute = require('./api/routes/contacts')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express()
+const contactRoute = require('./api/routes/contacts')
 
 app.use(morgan('dev'))
 app.use(cors())
